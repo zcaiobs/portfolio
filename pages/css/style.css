@@ -1,0 +1,175 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header {
+    grid-area: h;
+    background: white;
+}
+
+main {
+    grid-area: m;
+    background: #262d3d;
+}
+
+footer {
+    grid-area: f;
+    background: white;
+}
+
+section {
+    grid-area: s;
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3% 20% 85% 2%;
+    grid-template-areas: 'h' 's' 'm' 'f';
+}
+
+.container-2 {
+    margin: auto;
+    width: 80%;
+}
+
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.stack > figure {
+    margin-top: 200px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.navbar {
+    width: 80%;
+}
+
+.navbar > li {
+    display: inline;
+    padding-bottom: 15px;
+    margin: 0px 15px;
+    background: white;
+}
+
+.navbar > li:hover {
+    background: #262d3d;
+}
+
+.navbar > li:active {
+    background: #00cc83;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    width: 80%;
+    margin: auto;
+}
+
+a{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    background: white;
+    color: #262d3d;
+    letter-spacing: 1px;
+}
+
+a:active {
+    color: #00cc83;
+}
+
+.hello {
+    font-size: 248px;
+    font-family: 'Cormorant Infant', serif;
+    color: #262d3d;;
+}
+
+.sec1 div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.sec1 div h3 {
+    color: rgb(197, 197, 197);
+    position: absolute; 
+    right: 200px; 
+    margin-bottom: 300px;
+    font-family: 'Cormorant Infant', serif;
+    letter-spacing: 1px;
+    animation:  3s spacing;
+}
+
+@keyframes spacing {
+    0% {
+        opacity: 0;
+      }
+    20% {
+        opacity: 0;
+      }
+    100% {
+        opacity: 100;
+      }
+    }
+
+.sec2 {
+    padding-top: 210px;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+p {
+    letter-spacing: 1px;
+}
+
+.name {
+    font-size: 25px; 
+    color:#262d3d; 
+    background: white;
+}
+
+.about > h1 {
+    margin-top: 200px;
+}
+
+.contact > h1 {
+    margin-top: 200px;
+}
+
+.work > h1 {
+    margin-top: 200px;
+}
+
+footer > div {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
