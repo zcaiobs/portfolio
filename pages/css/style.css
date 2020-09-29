@@ -29,13 +29,17 @@ section {
 .container-1 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3% 20% 85% 2%;
+    grid-template-rows: 3% 20% 80% 3%;
     grid-template-areas: 'h' 's' 'm' 'f';
 }
 
 .container-2 {
     margin: auto;
     width: 80%;
+}
+
+.container-2 p {
+    margin-bottom: 50px;
 }
 
 .stack {
@@ -47,7 +51,11 @@ section {
 }
 
 .stack > figure {
-    margin-top: 200px;
+    margin-top: 100px;
+}
+
+hr {
+    margin-top: 50px;
 }
 
 nav ul {
@@ -115,7 +123,7 @@ a:active {
 }
 
 .sec1 div h3 {
-    color: rgb(197, 197, 197);
+    color: rgb(170, 170, 170);
     position: absolute; 
     right: 200px; 
     margin-bottom: 300px;
@@ -159,11 +167,21 @@ p {
 }
 
 .contact > h1 {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .work > h1 {
-    margin-top: 200px;
+    margin-top: 100px;
+}
+
+.work a {
+    background: none;
+    color: white;
+    padding: 0;
+}
+
+.work a:hover {
+    color: #00cc83;
 }
 
 footer > div {
@@ -172,4 +190,25 @@ footer > div {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.repos {
+    width: 400px;
+    border: 1px solid rgb(185, 185, 185);
+    padding: 10px;
+    margin: 5px;
+}
+
+footer a {
+    background: none;
+    color: #262d3d; 
+    padding: 0px;
 }
