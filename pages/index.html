@@ -10,77 +10,117 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 
 <body>
     <div class="container-1" id="home">
         <header>
-            <nav>
-                <ul class="navbar">
-                    <li class="name" style="background: white; margin-right: 60px;">→ ZCaio BS : Dev Jr</li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#stack">Stack</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="sec1">
-            <div>
-                <h1 class="hello">Hello.•</h1>
-                <h3>Caio Bernardo da Silva</h3>
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#" style="font: 45px bold;">
+                        DEV
+                    </a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarBasicExample" class="navbar-menu is-active">
+                    <div class="navbar-start">
+                        <a class="navbar-item">Home</a>
+                        <a class="navbar-item">Stack</a>
+                        <a class="navbar-item">Work</a>
+                        <a class="navbar-item">About</a>
+                        <a class="navbar-item">Contact</a>
+                    </div>
+                </div>
+    </div>
+    </nav>
+    </header>
+    <section class="hero is-large">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Welcome to my page!
+                </h1>
+                <h2 class="subtitle">
+                    I'm Caio Bernardo
+                </h2>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="section">
+            <div class="content">
+                <h1 class="title">The Stack</h1>
+                <p>
+                    I'll talk a little bit about my stack, (HTML5, CSS3, Javascript, NodeJS and
+                    MongoDB). The basis for creating multiple applications is present in these technologies.
+                    It's perfect for creating any web solution.
+                    This stack allows us to create applications and prototypes in a short time and at a low cost.
+                    What made me choose these technologies was the large community, because I can easily find all
+                    kinds of documentation, books, tutorials and lectures about it.<br><br>
+
+                    Knowing how to consume an api is essential today, as many applications are built on the standard
+                    Rest (Representational State Transfer), is a style of software architecture that defines a set
+                    of restrictions to be used when creating web services. Api rest is a way to ensure that the web
+                    services will have scalability and availability.
+                </p>
+                </h2>
             </div>
         </section>
-        <main>
-            <div class="container-2">
-                <div class="sec2">
-                    <h1>The Stack</h1>
-                    <p>Hi, I'm Caio and I'll talk a little bit about my stack, HTML5, CSS3, Javascript, NodeJS and
-                        MongoDB. The basis for creating multiple applications is present in these technologies.
-                        Perfect for creating any web solution.
-                        This stack allows us to create applications and prototypes in a short time and at a low cost.
-                        What made me choose these technologies was the large community, because I can easily find all
-                        kinds of documentation, books, tutorials and lectures about it.</p>
-                    <p>Knowing how to consume an api is essential today, as many applications are built on the standard
-                        Rest (Representational State Transfer), is a style of software architecture that defines a set
-                        of restrictions to be used when creating web services. Api rest is a way to ensure that the web
-                        services will have scalability and availability.</p>
-                    <div class="stack" id="stack">
-                        <figure>
-                            <img src="images/restapi.png" alt="Minha Figura" style="height: 395px; width: 750px;">
-                        </figure>
-                    </div>
-                    <section class="work" id="work">
-                        <h1>Repositories on github</h1>
-                        <p>These repositories were attached to my account via the github API. Here are all my
-                            repositories and personal projects that I use to study.</p>
-                        <div class="container-3" id="repos"></div>
-                    </section>
-                    <section class="about" id="about">
-                        <h1>Graduation's degree</h1>
-                        <p>Analysis and systems development<br>Executive assistant</p>
-                    </section>
-                    <section class="contact work" id="contact">
-                        <h1>Contact me</h1>
-                        <ul>
-                            <li>Email: caiobernardodasilva@gmail.com</li>
-                            <li>Cell.: (11) 96866-2710</li>
-                            <li><a href="https://www.linkedin.com/in/caio-bernardo-da-silva-01484aa1">Linkedin</a></li>
-                        </ul>
-                    </section>
+        <div class="sec2 ">
+            <div class="columns is-mobile is-centered divimg">
+                <div class="column is-half">
+                    <figure class="image is-228x228">
+                        <img class="is-rounded" src="images/restapi.png" alt="">
+                    </figure>
                 </div>
-
-        </main>
-        <footer>
-            <div>
-                <p style="color: #262d3d; margin-top: 30px;">The code for this page is also on <a
-                        href="https://github.com/zcaiobs/portfolio">github</a>.</p>
             </div>
-        </footer>
+            <section class="section">
+                <div class="content">
+                    <h1 class="title">Repositories on github</h1>
+                    <p>These repositories were attached to my account via the github API. Here are all my
+                        repositories and personal projects that I use to study.</p>
+                </div>
+            </section>
+            <section>
+                <div class="repos divimg" id="repos">
+                </div>
+            </section>
+            <section class="section" id="about">
+                <div class="content list">
+                    <h1>Graduation's degree</h1>
+                    <ul>
+                        <li>Analysis and systems development</li>
+                        <li>Executive assistant</li>
+                    </ul>
+                </div>
+                <div class="content list">
+                    <h1>Contact me</h1>
+                    <ul>
+                        <li>Email: caiobernardodasilva@gmail.com</li>
+                        <li>Cell.: (11) 96866-2710</li>
+                        <li><strong><a
+                                    href="https://www.linkedin.com/in/caio-bernardo-da-silva-01484aa1">Linkedin</a></strong>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer list">
+        <div class="content has-text-centered">
+            <p>The code for this page is also on
+                <strong><a href="https://github.com/zcaiobs/portfolio">github</a></strong> .</p>
+        </div>
+    </footer>
     </div>
-
     <script src="js/code.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
