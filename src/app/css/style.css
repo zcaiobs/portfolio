@@ -34,7 +34,6 @@
 
 .hero {
     background: #262d3d;
-    background-size: cover;
 }
 
 .hero h1 {
@@ -73,3 +72,13 @@ header span {
     border: 1px solid black;
     display: block;
 }
+
+@media only screen and (max-width: 768px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-body {
+        margin-top: 100px;
+    }
+  }
