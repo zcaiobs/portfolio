@@ -21,4 +21,12 @@ search().then(res => {
     });
 });
 
+const navbar = document.getElementById('navbarBasicExample');
+const burger = document.getElementById('burger');
+
+burger.addEventListener('click', (e) => {
+    burger.classList.toggle('is-active');
+    navbar.classList.toggle('is-active');
+})
+
 
