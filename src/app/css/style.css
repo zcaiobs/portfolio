@@ -81,4 +81,15 @@ header span {
     .hero-body {
         margin-top: 100px;
     }
+
+    .repo {
+        width: 350px;
+        margin: 10px;
+    }
+
+    .divimg {
+        width: 100%;
+    }
+
+
   }
